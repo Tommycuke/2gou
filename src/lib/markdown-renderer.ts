@@ -61,8 +61,10 @@ export async function renderMarkdown(markdown: string): Promise<MarkdownRenderRe
 	function extractHeadings(tokenList: typeof tokens) {
 		for (const token of tokenList) {
 			if (token.type === 'heading' && token.depth <= 3) {
-				// 直接使用token.text，然后去除markdown语法
+				// 直接使用token.text，然后去除markdown语法和HTML标签
 				let text = token.text
+				// 去除HTML标签
+				text = text.replace(/<[^>]*>/g, '')
 				// 去除markdown链接语法: [text](url)
 				text = text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
 				// 去除markdown代码语法: `code`
@@ -72,6 +74,8 @@ export async function renderMarkdown(markdown: string): Promise<MarkdownRenderRe
 				text = text.replace(/\*([^*]+)\*/g, '$1')
 				// 去除markdown删除线语法: ~~text~~
 				text = text.replace(/~~([^~]+)~~/g, '$1')
+				// 去除多余的空白字符
+				text = text.trim()
 				const id = slugify(text)
 				toc.push({ id, text, level: token.depth })
 			}
