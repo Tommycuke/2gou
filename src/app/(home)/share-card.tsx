@@ -48,12 +48,12 @@ export default function ShareCard() {
 
 				<h2 className='text-secondary text-sm'>随机推荐</h2>
 
-				<Link href={`/blog/${randomArticle.id}`} className='mt-2 block space-y-2'>
+				<Link href={`/blog/${randomArticle.slug}`} className='mt-2 block space-y-2'>
 					<div className='flex items-center'>
 						<div className='relative mr-3 h-12 w-12 shrink-0 overflow-hidden rounded-xl'>
 							<img src={randomArticle.cover} alt={randomArticle.title} className='h-full w-full object-cover' />
 						</div>
-						<h3 className='text-sm font-medium'>{randomArticle.title}</h3>
+						<h3 className='text-sm font-medium truncate'>{randomArticle.title}</h3>
 					</div>
 
 					<p className='text-secondary line-clamp-3 text-xs'>{randomArticle.summary}</p>
