@@ -47,17 +47,40 @@ export function MetaSection({ delay = 0 }: MetaSectionProps) {
 				/>
 
 				<div className='flex items-center gap-2'>
-					<input
-						type='checkbox'
-						id='hidden-check'
-						checked={form.hidden || false}
-						onChange={e => updateForm({ hidden: e.target.checked })}
-						className='h-4 w-4 rounded border-gray-300'
-					/>
-					<label htmlFor='hidden-check' className='cursor-pointer text-sm text-gray-600 select-none'>
-						隐藏此文章（仅管理员可见）
-					</label>
-				</div>
+				<input
+					type='checkbox'
+					id='hidden-check'
+					checked={form.hidden || false}
+					onChange={e => updateForm({ hidden: e.target.checked })}
+					className='h-4 w-4 rounded border-gray-300'
+				/>
+				<label htmlFor='hidden-check' className='cursor-pointer text-sm text-gray-600 select-none'>
+					隐藏此文章（仅管理员可见）
+				</label>
+			</div>
+
+			<div className='flex items-center gap-2'>
+				<input
+					type='checkbox'
+					id='password-protected-check'
+					checked={form.passwordProtected || false}
+					onChange={e => updateForm({ passwordProtected: e.target.checked })}
+					className='h-4 w-4 rounded border-gray-300'
+				/>
+				<label htmlFor='password-protected-check' className='cursor-pointer text-sm text-gray-600 select-none'>
+					密码访问
+				</label>
+			</div>
+
+			{form.passwordProtected && (
+				<input
+					type='password'
+					placeholder='请输入密码'
+					className='bg-card w-full rounded-lg border px-3 py-2 text-sm'
+					value={form.password || ''}
+					onChange={e => updateForm({ password: e.target.value })}
+				/>
+			)}
 			</div>
 		</motion.div>
 	)
