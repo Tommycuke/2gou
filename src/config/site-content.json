@@ -45,7 +45,7 @@
 	"enableCategories": true,
 	"currentHatIndex": 3,
 	"hatFlipped": false,
-	"enableChristmas": true,
+	"enableChristmas": false,
 	"enablePasswordAccess": true,
 	"passwordAccessCategories": [
 		"Chara",
