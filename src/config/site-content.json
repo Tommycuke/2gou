@@ -1,7 +1,7 @@
 {
 	"meta": {
 		"title": "[Tommy]",
-		"description": "任贰狗的个人博客，发布一些日常收集来的软件、游戏，还有一些乱七八糟瞎折腾的研究笔记教程之类的。",
+		"description": "我的個人部落格，當生活中有了新的想法、新的感悟，我就會隨時上來分享",
 		"username": "Tommy"
 	},
 	"theme": {
@@ -23,13 +23,8 @@
 		"#ADC995",
 		"#18EEE6"
 	],
-	"artImages": [
-		{
-			"id": "852eccdeaa21e3b7",
-			"url": "/images/art/852eccdeaa21e3b7.png"
-		}
-	],
-	"currentArtImageId": "852eccdeaa21e3b7",
+	"artImages": [],
+	"currentArtImageId": "",
 	"backgroundImages": [
 		{
 			"id": "",
