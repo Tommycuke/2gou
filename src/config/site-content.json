@@ -23,8 +23,13 @@
 		"#ADC995",
 		"#18EEE6"
 	],
-	"artImages": [],
-	"currentArtImageId": "",
+	"artImages": [
+		{
+			"id": "8840ad0ea2feca40",
+			"url": "/images/art/8840ad0ea2feca40.jpg"
+		}
+	],
+	"currentArtImageId": "8840ad0ea2feca40",
 	"backgroundImages": [
 		{
 			"id": "",
