@@ -1,11 +1,11 @@
 {
 	"meta": {
-		"title": "[贰狗日志]",
+		"title": "[Tommy]",
 		"description": "任贰狗的个人博客，发布一些日常收集来的软件、游戏，还有一些乱七八糟瞎折腾的研究笔记教程之类的。",
-		"username": "Ciao"
+		"username": "Tommy"
 	},
 	"theme": {
-		"colorBrand": "#35bfab",
+		"colorBrand": "#3C8945",
 		"colorPrimary": "#334f52",
 		"colorSecondary": "#7b888e",
 		"colorBrandSecondary": "#1fc9e7",
@@ -15,12 +15,13 @@
 		"colorArticle": "#ffffffcc"
 	},
 	"backgroundColors": [
-		"#EDDD62",
-		"#9EE7D1",
-		"#84D68A",
-		"#EDDD62",
-		"#88E6E5",
-		"#a7f3d0"
+		"#FCBE0D",
+		"#F6D266",
+		"#3dae0e",
+		"#48B6EF",
+		"#09C10B",
+		"#ADC995",
+		"#18EEE6"
 	],
 	"artImages": [
 		{
@@ -36,29 +37,7 @@
 		}
 	],
 	"currentBackgroundImageId": "",
-	"socialButtons": [
-		{
-			"id": "github",
-			"type": "github",
-			"value": "https://github.com/RT622",
-			"label": "Github",
-			"order": 3
-		},
-		{
-			"id": "juejin",
-			"type": "qq",
-			"value": "/images/social-buttons/7f509f0a4c020a31.png",
-			"label": "稀土掘金",
-			"order": 2
-		},
-		{
-			"id": "email",
-			"type": "email",
-			"value": "Twodog@88.com",
-			"label": "",
-			"order": 1
-		}
-	],
+	"socialButtons": [],
 	"clockShowSeconds": false,
 	"summaryInContent": false,
 	"isCachePem": true,
